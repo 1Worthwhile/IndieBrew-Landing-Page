@@ -1,0 +1,501 @@
+/* font link */
+@import url("https://fonts.googleapis.com/css2?family=Exo+2:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  width: 100%;
+  min-height: 100vh;
+  height: 100%;
+  overflow-x: hidden;
+  font-family: "Exo 2", sans-serif;
+  background: linear-gradient(-45deg, white, white, white, rgb(245, 203, 245));
+}
+
+.html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 60px;
+}
+img {
+  width: 100%;
+  height: 100%;
+}
+.container {
+  width: 80%;
+  margin: 0 auto;
+}
+button {
+  outline: none;
+  border: none;
+  font-family: "Exo 2", sans-serif;
+  text-transform: capitalize;
+  transition: 0.3s linear;
+  display: block;
+  cursor: pointer;
+}
+.overlay {
+  display: none;
+}
+button:hover {
+  box-shadow: 0 0 5px black;
+}
+:root {
+  --main-color: #8b63e1;
+}
+
+nav {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  padding: 20px 0;
+  z-index: 100;
+  background: transparent;
+  transition: 400ms ease;
+}
+nav.active {
+  background: white;
+  box-shadow: 0 0 10px black;
+}
+.menu-bar {
+  display: none;
+}
+.navcontainer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.navcontainer .logo {
+  width: 120px;
+}
+.navcontainer .links a {
+  text-decoration: none;
+  text-transform: capitalize;
+  padding: 15px 20px;
+  color: black;
+  font-weight: 500;
+}
+.navcontainer .links a:last-child {
+  color: white;
+  background: var(--main-color);
+  border-radius: 5px;
+  transition: 0.3s linear;
+}
+.navcontainer .links a:last-child:hover {
+  box-shadow: 0 0 5px black;
+}
+.navcontainer .links a:last-child span {
+  font-weight: 200;
+}
+.home {
+  width: 100%;
+  height: 100%;
+  min-height: fit-content;
+  margin-top: 100px;
+}
+.homecontainer {
+  display: flex;
+  align-items: center;
+  padding-top: 40px;
+}
+.homecontainer .txt {
+  width: 50%;
+}
+.homecontainer .txt h1 {
+  font-size: 50px;
+  line-height: 50px;
+}
+
+.homecontainer .txt p {
+  font-size: 20px;
+  padding: 20px 0;
+}
+.homecontainer .txt p span {
+  color: var(--main-color);
+}
+.homecontainer .txt button {
+  padding: 15px 20px;
+  border-radius: 5px;
+  color: white;
+  background: var(--main-color);
+}
+.homecontainer .txt .img {
+  width: 200px;
+  margin-top: 20px;
+  margin-bottom: -10px;
+}
+.homecontainer .img {
+  width: 50%;
+}
+/* more section */
+
+.more {
+  width: 100%;
+  height: 100%;
+  min-height: fit-content;
+  margin: 50px 0;
+}
+.more_container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px 0;
+}
+.more_container .txt {
+  width: 60%;
+}
+.more_container .txt h2 {
+  font-size: 35px;
+}
+.more_container .txt p {
+  font-size: 20px;
+  padding: 20px 0;
+}
+.more_container .txt a {
+  font-size: 20px;
+  font-weight: bold;
+  color: var(--main-color);
+  text-decoration: none;
+}
+.more_container .txt a span {
+  font-weight: bolder;
+  margin-left: 10px;
+}
+.more_container .img {
+  width: 30%;
+}
+footer {
+  width: 100%;
+  height: 100%;
+  min-height: fit-content;
+  padding: 70px 0;
+  background: whitesmoke;
+}
+.footercontainer {
+  display: flex;
+  justify-content: space-between;
+}
+.footercontainer .part1 {
+  width: 40%;
+}
+.footercontainer .part1 h3 {
+  padding-bottom: 20px;
+}
+
+.footercontainer .part2 {
+  width: 50%;
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+}
+
+.footercontainer .part2 .box h3 {
+  padding-bottom: 20px;
+}
+.footercontainer .part2 .box p {
+  padding-bottom: 10px;
+}
+.navcontainer .back {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  text-decoration: none;
+  color: black;
+}
+.navcontainer .arrow {
+  width: 20px;
+  padding: 5px;
+  border: 1px solid black;
+  border-radius: 5px;
+}
+.loginpage {
+  width: 100%;
+  height: 100vh;
+  background: rgb(245, 203, 245);
+}
+.login {
+  width: 100%;
+  height: 100%;
+}
+.logincontainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+.logincontainer .txt {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 40%;
+}
+
+.logincontainer .txt h2 {
+  font-size: 30px;
+}
+.logincontainer .txt .box {
+  display: flex;
+  gap: 10px;
+}
+.logincontainer .txt .box p {
+  font-size: 20px;
+}
+.logincontainer .part2 {
+  width: 60%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.logincontainer .part2 form {
+  width: 70%;
+  background: white;
+  padding: 60px 40px;
+  border-radius: 10px;
+}
+.logincontainer .part2 form h2 {
+  font-size: 25px;
+}
+.logincontainer .part2 form .box {
+  width: 100%;
+  margin-top: 20px;
+}
+.logincontainer .part2 form .box h4 {
+  font-size: 15px;
+  text-transform: capitalize;
+}
+.logincontainer .part2 form .box input {
+  width: 100%;
+  height: 30px;
+  padding: 20px;
+  outline: none;
+  border-radius: 5px;
+  border: 1px solid grey;
+  margin-top: 10px;
+}
+
+.logincontainer .part2 form p input {
+  accent-color: var(--main-color);
+}
+.logincontainer .part2 form p {
+  font-size: 15px;
+  margin-top: 10px;
+}
+.logincontainer .part2 form p a {
+  font-weight: bold;
+  color: var(--main-color);
+}
+.logincontainer .part2 form button {
+  width: 100%;
+  padding: 15px;
+  margin: 20px 0;
+  color: white;
+  background: var(--main-color);
+  border-radius: 5px;
+}
+/*
+
+
+
+
+
+
+
+
+
+*/
+/* media queries */
+@media (max-width: 768px) {
+  .navcontainer .links a {
+    font-size: 15px;
+  }
+  .homecontainer .txt h1 {
+    font-size: 40px;
+  }
+  .homecontainer .txt p {
+    font-size: 15px;
+  }
+  .homecontainer .txt .img {
+    width: 150px;
+  }
+  .more_container .txt h2 {
+    font-size: 30px;
+  }
+  .more_container .txt p {
+    font-size: 15px;
+  }
+  .more_container .txt a {
+    font-size: 15px;
+  }
+  .footercontainer .part1 p {
+    font-size: 15px;
+  }
+  .footercontainer .part2 {
+    grid-template-columns: auto auto;
+  }
+  .footercontainer .part2 .box p {
+    font-size: 15px;
+  }
+  .loginpage {
+    min-height: 100vh;
+    height: 100%;
+  }
+  .loginpage nav {
+    position: unset;
+  }
+  .logincontainer {
+    flex-direction: column;
+    margin-top: 10px;
+    gap: 30px;
+    padding-bottom: 50px;
+  }
+  .logincontainer .txt {
+    width: 100%;
+  }
+  .logincontainer .part2 {
+    width: 100%;
+  }
+}
+@media (max-width: 600px) {
+  .navcontainer .links {
+    position: fixed;
+    top: 90px;
+    right: 20px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 300px;
+    box-shadow: 0 0 10px black;
+    transition: transform 400ms linear;
+    transform: translateX(140%);
+  }
+  .navcontainer .links.active {
+    transform: translateX(0);
+  }
+  .navcontainer .links a {
+    width: 100%;
+    text-align: center;
+    padding: 30px 0;
+    background: white;
+    box-shadow: inset 0 0 10px rgb(221, 218, 218);
+  }
+  .navcontainer .links a:last-child {
+    border-radius: 0;
+    box-shadow: inset 0 0 10px #43306a;
+  }
+  .menu-bar {
+    display: block;
+    padding: 2px;
+    background: white;
+    border-radius: 5px;
+    box-shadow: 0 0 2px #43306a;
+  }
+  .menu-bar span {
+    font-size: 30px;
+  }
+  .menu-bar span:first-child {
+    display: block;
+  }
+  .menu-bar span:last-child {
+    display: none;
+  }
+
+  .menu-bar.active span:first-child {
+    display: none;
+  }
+  .menu-bar.active span:last-child {
+    display: block;
+  }
+  .overlay {
+    display: block;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    position: fixed;
+    background: rgba(57, 56, 56, 0.357);
+    pointer-events: none;
+    opacity: 0;
+    transition: 400ms linear;
+  }
+  .overlay.active {
+    pointer-events: all;
+    opacity: 1;
+  }
+  .homecontainer {
+    flex-direction: column-reverse;
+  }
+  .homecontainer .img {
+    width: 100%;
+    margin-bottom: 30px;
+  }
+  .homecontainer .txt {
+    width: 100%;
+  }
+  .more_container {
+    flex-direction: column-reverse;
+    padding: 50px 0;
+  }
+  .more_container:last-child {
+    flex-direction: column;
+  }
+  .more_container .img {
+    width: 100%;
+    margin-bottom: 40px;
+  }
+  .more_container .txt {
+    width: 100%;
+  }
+  .logincontainer .part2 form {
+    width: 100%;
+  }
+}
+@media (max-width: 425px) {
+  .footercontainer {
+    flex-direction: column;
+  }
+  .footercontainer .part1 {
+    width: 100%;
+  }
+  .footercontainer .part2 {
+    width: 100%;
+    column-gap: 100px;
+    row-gap: 30px;
+    margin-top: 40px;
+  }
+  .logincontainer .txt h2 {
+    font-size: 25px;
+  }
+  .logincontainer .txt .box p {
+    font-size: 15px;
+  }
+  .logincontainer .part2 form h2 {
+    font-size: 25px;
+  }
+  .loginpage nav .navcontainer .back h4 span {
+    display: none;
+  }
+}
+@media (max-width: 320px) {
+  .navcontainer .links {
+    right: 10px;
+  }
+  .footercontainer .part2 {
+    width: 100%;
+    column-gap: 50px;
+    row-gap: 30px;
+    margin-top: 40px;
+  }
+  .loginpage nav .navcontainer {
+    width: 90%;
+  }
+  .loginpage.logincontainer {
+    width: 90%;
+  }
+  .logincontainer .part2 form {
+    padding: 40px 20px;
+  }
+}
